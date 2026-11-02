@@ -15,14 +15,18 @@
 }
 
 
-  body {
+ body {
   font-family: "Tajawal", sans-serif;
   background-color: var(--bg);
+}
+.page-1 {
+  min-height: 100vh;
   background-image: url("images/Page1.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
   background-size: cover;
-  min-height: 100vh;
+  background-color: #FFF;   /* لو الصورة ما غطّت */
+  padding-top: 16px;   
 }
 
 
@@ -31,7 +35,7 @@
   align-items: center;
   justify-content: space-between;
   max-width: 1200px;
-  margin: 16px auto;
+  margin: 0 auto 16px;  
   padding: 12px 32px;
   background: rgba(255, 255, 255, 0.4);
   border-radius: 40px;
@@ -141,19 +145,7 @@
   margin: 0 auto;
   padding: 40px 32px;
 }
-/*
-.hero-image {
-  flex: 1;
-  display: flex;
-  justify-content: flex-start;
-}
 
-.hero-image img {
-  width: 100%;
-  max-width: 520px;
-  height: auto;
-}
-  */
 .hero-title {
   display: flex;
   flex-direction: column;
@@ -275,4 +267,293 @@
   font-weight: 400;
   line-height: 20px;
   text-align: center;
+}
+
+/* About */
+.about {
+  min-height: 573px;
+  background: #FFF;
+  /*border-radius: 24px;*/
+}
+
+.about-inner {
+   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 60px 120px;
+}
+
+.about-content {
+  flex: 0 0 560px;
+  
+}
+
+.about-label {
+  display: block;
+  color: var(--nabd-600);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.about-title {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+.about-line1,
+.about-line2 {
+  color: var(--nabd-900);
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 66px;
+}
+
+.about-accent {
+  color: var(--pink);
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 66px;
+}
+
+.about-text {
+  width: 100%;
+  margin-top: 24px;
+  color: #4B5563;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.why-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-top: 48px;
+  padding: 18px;
+  border-radius: 16px;
+  border: 1px solid #F8E2D8;
+  background: rgba(255, 235, 239, 0.5);
+}
+
+.why-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: #FFF;
+}
+
+.why-icon img {
+  width: 16.5px;
+  height: 16.5px;
+}
+
+.why-title {
+  color: #3E2830;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24.5px;
+}
+
+.why-text {
+  max-width: 501px;
+  color: #74646A;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24.5px;
+}
+
+.about-media {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  justify-content: flex-start; /* RTL: يعني لليمين */
+}
+
+.photo-stack {
+  position: relative;
+  flex-shrink: 0;
+  width: 400px;
+  height: 480px;
+}
+
+/* الوردية: ورا */
+.photo-pink {
+  position: absolute;
+  top: 15px;
+  left: 9px;
+  z-index: 1;
+  width: 373px;
+  height: 432px;
+  transform: rotate(4.958deg);
+  border-radius: 92px 12px;
+  opacity: 0.82;
+  background:
+    linear-gradient(0deg, rgba(225, 115, 141, 0.41), rgba(225, 115, 141, 0.41)),
+    url("images/PinkPreg.jpeg") lightgray 50% / cover no-repeat;
+}
+
+/* البيضاء: قدام */
+.photo-white {
+  position: absolute;
+  top: 32px;
+  left: -6px;
+  z-index: 2;
+  width: 350px;
+  height: 438px;
+  border-radius: 80px 16px 48px 16px;
+  box-shadow: 0 12px 32px rgba(182, 97, 120, 0.18);
+  background: url("images/WhitePreg.jpg") lightgray 0.379px -83.073px / 104.476% 151.375% no-repeat;
+}
+
+.about-branch {
+ position: absolute;
+  bottom: 10px;     /* أسفل الغصن يلمس أعلى الكرت الوردي */
+  left: -50px;
+  z-index: 5;
+  width: 110.014px;
+  height: 292.497px;
+  transform: rotate(-6.942deg);
+  transform-origin: bottom center;  /* يدور من أسفله، فما يبعد عن الكرت */
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.brand-card {
+  position: absolute;
+  bottom: -20px;
+  left: -70px;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  
+  justify-content: center;
+  gap: 2px;
+  width: 189.203px;
+  height: 92.804px;
+  padding: 0 20px;
+  border-radius: 16px;
+  background: #E1738D;
+  box-shadow: 0 22px 60px 0 rgba(94, 63, 60, 0.12);
+  
+  
+}
+
+.brand-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brand-logo {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;       /* بدل cover عشان الشعار ما ينقص منه شي */
+  flex-shrink: 0;
+}
+
+.brand-name {
+  color: var(--nabd-50, #F9EFE3);
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 33px;
+  white-space: nowrap;
+}
+
+.brand-tagline {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.5px;
+  white-space: nowrap;
+}
+
+/* بطاقات المزايا تحت About */
+.about-features {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 120px 60px;
+}
+
+.about-feature {
+  position: relative;
+  flex: 1;
+  padding: 24px 24px 24px 32px;
+}
+
+/* الخطوط العمودية بين البطاقات */
+.about-feature + .about-feature {
+  border-right: 1px solid #F0E4E4;
+}
+
+.af-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.af-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #FFF4F6;
+}
+
+.af-icon img {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  justify-self: center;
+}
+
+.af-icon-location {
+  width: 14.667px;
+  height: 18.333px;
+}
+
+.af-icon-star {
+  width: 22px;
+  height: 22px;
+}
+
+.af-icon-heart {
+  width: 19.239px;
+  height: 16.52px;
+}
+
+.af-title {
+  color: #3E2830;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25.5px;
+}
+
+.af-text {
+  max-width: 268px;
+  margin-top: 12px;
+  color: #74646A;
+  text-align: right;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 22.1px;
+}
+
+/* الرقم الصغير بزاوية البطاقة */
+.af-number {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  color: #E5D5D5;
+  font-size: 11px;
 }
