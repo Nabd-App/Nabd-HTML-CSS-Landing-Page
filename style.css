@@ -623,7 +623,7 @@
   gap: 120px;
   width: 100%;
   max-width: 1200px;
-  margin: 80px auto 0;
+  margin: 5px auto 0;
   padding: 0 32px;
   text-align: right;
 }
@@ -966,4 +966,195 @@
 .week-card {
   position: relative;
   z-index: 1;         /* عشان الكرت يغطي الدائرة */
+}
+
+
+/* ===== الصفحة الرابعة: المساعد أُنس ===== */
+.assistant {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 195, 208, 0.33);
+}
+
+.assistant-inner {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 60px 60px 60px 120px;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.assistant-visual {
+  display: inline-block;
+  flex-shrink: 0;
+  line-height: 0;
+  border-radius: 30px;
+  border: 1px solid #F1DDE2;
+  background: linear-gradient(150deg, #FFF 38.17%, #FFF7F8 92.26%);
+  box-shadow: 0 22px 55px 0 rgba(103, 51, 66, 0.07);
+  overflow: hidden;
+}
+
+.assistant-visual img {
+   display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+.assistant-content {
+ flex: 1;
+  min-width: 0;
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.assistant-head {
+ display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.assistant-number {
+ order: 2;
+  flex-shrink: 0;
+  color: #E1738D;
+  font-size: 66px;
+  font-weight: 800;
+  line-height: 66px;
+  letter-spacing: -3.96px;
+  
+}
+
+.assistant-titles {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.assistant-label {
+   display: block;
+  margin-top: 20px;
+  margin-right: 80px;
+  color: #BE526D;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19.5px;
+  letter-spacing: 0.26px;
+}
+
+.assistant-title {
+ width: 455px;
+  max-width: 100%;
+  margin-top: 8px;
+  margin-right: 90px;
+  color: var(--nabd-800, #6D3047);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 51.12px;
+  letter-spacing: -1.26px;
+}
+
+.assistant-text {
+  width: 521px;
+  max-width: 100%;
+  margin-top: 20px;
+   margin-right: 80px;
+  color: #75636A;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 29.25px;
+}
+
+.assistant-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  margin-top: 24px;
+  padding: 12px 14px;
+  border-radius: 10px 0 0 10px;
+  border-right: 2px solid #E1738D;
+  background: #FFF4F6;
+  margin-right: 80px;
+}
+
+.assistant-note img {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.assistant-note p {
+  color: #BE526D;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 18.7px;
+}
+
+.faq {
+  margin-top: 28px;
+    margin-right: 80px;
+}
+
+.faq-title {
+  color: #3E2630;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.5px;
+  
+}
+
+.faq-sub {
+  color: #75636A;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21px;
+  
+}
+
+.faq-item {
+  padding: 14px 0;
+  border-top: 1px solid #F1DDE2;
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq-q-text {
+  color: #3E2630;
+  font-size: 12.5px;
+  font-weight: 700;
+  line-height: 18.75px;
+}
+
+.faq-sign {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 8px;
+  background: #FFF4F6;
+  color: #E1738D;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  color: #75636A;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 19.8px;
 }
