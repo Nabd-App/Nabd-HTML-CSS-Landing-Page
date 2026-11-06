@@ -1770,3 +1770,201 @@
   font-weight: 800;
   line-height: 17.5px;
 }
+
+/* ===== الصفحة السابعة: تواصل معنا ===== */
+.contact {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: #FFF;
+}
+
+.contact-inner {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 60px 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.contact-content {
+  flex: 0 0 446px;
+  max-width: 100%;
+}
+
+.contact-form-wrap {
+  flex: 1;
+  min-width: 0;
+}
+
+.contact-label {
+  display: block;
+  color: var(--nabd-600, #A34F68);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.contact-title {
+  color: var(--nabd-800, #6D3047);
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 64.8px;
+  letter-spacing: -1.2px;
+}
+
+.contact-text {
+  width: 477px;
+  max-width: 100%;
+  margin-top: 8px;
+  color: #74646A;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 31.45px;
+}
+
+.contact-photo {
+  position: relative;
+  height: 292px;
+  margin-top: 24px;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.contact-photo > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-chip {
+  position: absolute;
+  right: 13px;
+  bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 13px;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.94);
+  color: #E1738D;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.contact-chip img {
+  width: 22px;
+  height: 22px;
+}
+
+/* ===== فورم التواصل ===== */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 18px;
+  width: 595px;
+  max-width: 100%;
+  min-height: 492px;
+  padding: 40px 30px 20px 30px;
+  border-radius: 12px;
+  border: 1px solid #F1DCE2;
+  background: #FFF;
+  box-shadow: 0 18px 50px 0 rgba(102, 55, 69, 0.09);
+   transform: translateX(-80px);  
+}
+
+.form-row {
+  display: flex;
+  gap: 14px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-label {
+  align-self: stretch;
+  color: #5D4750;
+  text-align: right;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19.5px;
+}
+
+.form-input {
+  width: 100%;
+  height: 48px;
+  padding: 13px 14px;
+  border-radius: 12px;
+  border: 1px solid #EED7DE;
+  background: #FFFCFD;
+  color: #5D4750;
+  text-align: right;
+  font-family: "Tajawal", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: #AB9BA1;
+}
+
+.form-input:focus {
+  border-color: #E1738D;
+}
+
+.form-textarea {
+  min-height: 115px;
+  height: 115px;
+  line-height: 19.5px;
+  resize: none;
+}
+
+.form-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  align-self: flex-start;      /* RTL: يعني يمين */
+  height: 50px;
+  min-height: 50px;
+  padding: 0 24px;
+  margin-top: 6px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #F5B99D -25.4%, #E1738D 100%);
+  box-shadow: 0 12px 26px 0 rgba(225, 115, 141, 0.22);
+  color: #FFF;
+  font-family: "Tajawal", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  cursor: pointer;
+   align-self: flex-end;
+}
+
+.form-submit img {
+  width: 18px;
+  height: 18px;
+}
+
+.form-input[type="email"] {
+  text-align: left;
+}
+
+.form-input[type="email"]::placeholder {
+  text-align: left;
+}
