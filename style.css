@@ -8,6 +8,8 @@
      --nabd-600: #A34F68;
 }
 
+html { scroll-behavior: smooth; }
+
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +19,7 @@
 
  body {
   font-family: "Tajawal", sans-serif;
-  background-color: var(--bg);
+  background-color: #FFF;
 }
 .page-1 {
   min-height: 100vh;

@@ -10,10 +10,10 @@
 </head>
 <body>
 
-  <div class="page-1">
+  <div class="page-1" id="home">
 
     <header class="header">
-      <a href="#" class="logo">
+      <a href="#home" class="logo">
         <img src="images/nabdLogo.png" alt="شعار نبض">
         <div class="logo-text">
           <span class="logo-name">نَبض</span>
@@ -22,12 +22,10 @@
       </a>
 
       <nav class="nav">
-        <a href="#" class="active">الرئيسية</a>
-        <a href="#">عن نبض</a>
-        <a href="#">رحلة الحمل</a>
-        <a href="#">المساعد أُنس</a>
-        <a href="#">الخدمات والمساعدات</a>
-        <a href="#">تواصل معنا</a>
+        <a href="#home" class="active">الرئيسية</a>
+        <a href="#about">عن نَبض</a>
+        <a href="#features">مميزات نَبض</a>
+        <a href="#contact">تواصل معنا</a>
       </nav>
 
       <div class="header-actions">
@@ -83,7 +81,7 @@
 
   </div>
 
-  <section class="about">
+  <section class="about" id="about">
 
     <div class="about-inner">
 
@@ -163,7 +161,7 @@
 
   </section>
 
-  <section class="services">
+  <section class="services" id="features">
 
     <div class="services-inner">
 
@@ -244,9 +242,7 @@
           <div class="week-progress"><span class="week-progress-fill"></span></div>
 
         </div>
-        <!-- هون بتنتهي week-card -->
 
-        <!-- ===== الجديد: الكرت الوردي (صحتكِ هذا الأسبوع) ===== -->
         <div class="week-health">
           <img src="images/WhiteHeart.svg" alt="" class="week-health-icon">
           <div class="week-health-text">
@@ -254,21 +250,20 @@
             <p class="week-health-desc">إرشادات واضحة ومختصرة</p>
           </div>
         </div>
-        <!-- ===== نهاية الجديد ===== -->
 
       </div>
-      <!-- هون بتنتهي week-visual -->
 
     </div>
 
   </section>
 
-    <section class="assistant">
+  <section class="assistant">
     <div class="assistant-inner">
 
       <div class="assistant-visual">
         <img src="images/mobile.png" alt="المساعد أُنس على الموبايل">
       </div>
+
       <div class="assistant-content">
 
         <div class="assistant-head">
@@ -283,13 +278,12 @@
           اطرحي أسئلتكِ المتعلقة بالحمل، واحصلي على معلومات توعوية مبسطة تساعدكِ على فهم رحلتكِ.
         </p>
 
-          <div class="assistant-note">
-           <img src="images/true.svg" alt="">
-            <p>أُنس مساعد توعوي يقدم معلومات عامة، ولا يُعد بديلًا عن الطبيب أو التشخيص الطبي.</p>
+        <div class="assistant-note">
+          <img src="images/true.svg" alt="">
+          <p>أُنس مساعد توعوي يقدم معلومات عامة، ولا يُعد بديلًا عن الطبيب أو التشخيص الطبي.</p>
         </div>
 
-
-              <div class="faq">
+        <div class="faq">
           <h4 class="faq-title">الأسئلة الشائعة</h4>
           <p class="faq-sub">إجابات واضحة ومختصرة تساعدكِ على التعرف على خدمات نبض.</p>
 
@@ -311,14 +305,12 @@
           </div>
         </div>
 
-
-
       </div>
 
     </div>
   </section>
 
-<section class="support">
+  <section class="support">
     <div class="support-inner">
 
       <div class="support-content">
@@ -396,25 +388,25 @@
           </div>
 
         </div>
-<div class="map-card">
+
+        <div class="map-card">
           <img src="images/map.png" alt="خريطة المراكز" class="map-img">
           <div class="map-buttons">
             <span class="map-btn map-btn-active">الخريطة</span>
             <span class="map-btn">القائمة</span>
           </div>
         </div>
-      </div>
 
-        
+      </div>
 
     </div>
   </section>
 
-    <section class="saved">
+  <section class="saved">
     <div class="saved-inner">
 
       <div class="saved-content">
-                <div class="saved-head">
+        <div class="saved-head">
           <span class="saved-number">04</span>
           <div class="saved-titles">
             <span class="saved-label">وصول ووعي</span>
@@ -452,12 +444,11 @@
 
         <div class="phone">
 
-                    <div class="phone-head">
+          <div class="phone-head">
             <img src="images/WiFi.svg" alt="" class="phone-wifi">
             <div class="phone-title">
               <span>المحفوظات</span>
               <img src="images/SaveIcon .svg" alt="" class="phone-save">
-              
             </div>
           </div>
 
@@ -488,7 +479,7 @@
     </div>
   </section>
 
-    <section class="contact">
+  <section class="contact" id="contact">
     <div class="contact-inner">
 
       <div class="contact-content">
@@ -511,38 +502,36 @@
       </div>
 
       <div class="contact-form-wrap">
-        <div class="contact-form-wrap">
-  <form class="contact-form" action="#" method="post">
+        <form class="contact-form" action="#" method="post">
 
-    <div class="form-row">
-      <div class="form-group">
-        <label class="form-label" for="name">الاسم</label>
-        <input class="form-input" type="text" id="name" name="name" placeholder="اكتبي اسمكِ">
-      </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="name">الاسم</label>
+              <input class="form-input" type="text" id="name" name="name" placeholder="اكتبي اسمكِ">
+            </div>
 
-      <div class="form-group">
-        <label class="form-label" for="email">البريد الإلكتروني</label>
-        <input class="form-input" type="email" id="email" name="email" placeholder="name@example.com" dir="ltr">
-      </div>
-    </div>
+            <div class="form-group">
+              <label class="form-label" for="email">البريد الإلكتروني</label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="name@example.com" dir="ltr">
+            </div>
+          </div>
 
-    <div class="form-group">
-      <label class="form-label" for="subject">الموضوع</label>
-      <input class="form-input" type="text" id="subject" name="subject" placeholder="كيف يمكننا مساعدتكِ؟">
-    </div>
+          <div class="form-group">
+            <label class="form-label" for="subject">الموضوع</label>
+            <input class="form-input" type="text" id="subject" name="subject" placeholder="كيف يمكننا مساعدتكِ؟">
+          </div>
 
-    <div class="form-group">
-      <label class="form-label" for="message">الرسالة</label>
-      <textarea class="form-input form-textarea" id="message" name="message" placeholder="اكتبي رسالتكِ هنا..."></textarea>
-    </div>
+          <div class="form-group">
+            <label class="form-label" for="message">الرسالة</label>
+            <textarea class="form-input form-textarea" id="message" name="message" placeholder="اكتبي رسالتكِ هنا..."></textarea>
+          </div>
 
-    <button type="submit" class="form-submit">
-      <span>إرسال الرسالة</span>
-      <img src="images/LeftArrow.svg" alt="">
-    </button>
+          <button type="submit" class="form-submit">
+            <span>إرسال الرسالة</span>
+            <img src="images/LeftArrow.svg" alt="">
+          </button>
 
-  </form>
-</div>
+        </form>
       </div>
 
     </div>
@@ -550,7 +539,7 @@
 
   <section class="cta">
 
-        <svg class="cta-wave cta-wave-back" viewBox="0 0 1440 203" preserveAspectRatio="none" aria-hidden="true">
+    <svg class="cta-wave cta-wave-back" viewBox="0 0 1440 203" preserveAspectRatio="none" aria-hidden="true">
       <path d="M0 60 C 200 10, 420 20, 700 70 C 980 120, 1220 100, 1440 40 L1440 203 L0 203 Z" fill="#FFDCD2" fill-opacity="0.51"/>
       <path d="M0 60 C 200 10, 420 20, 700 70 C 980 120, 1220 100, 1440 40" fill="none" stroke="#FFF" stroke-width="4"/>
     </svg>
@@ -579,7 +568,7 @@
             <span>ابدئي رحلتكِ الآن</span>
             <img src="images/LeftArrow.svg" alt="">
           </a>
-          <a href="#" class="cta-btn-secondary">العودة إلى الأعلى</a>
+          <a href="#home" class="cta-btn-secondary">العودة إلى الأعلى</a>
         </div>
       </div>
 
@@ -592,9 +581,7 @@
     </div>
   </section>
 
-
-
-    <footer class="footer">
+  <footer class="footer">
     <div class="footer-inner">
 
       <div class="footer-top">
@@ -612,10 +599,10 @@
 
         <div class="footer-col">
           <h4 class="footer-col-title">روابط سريعة</h4>
-          <a href="#">الرئيسية</a>
-          <a href="#">عن نبض</a>
-          <a href="#">مميزات نبض</a>
-          <a href="#">تواصل معنا</a>
+          <a href="#home">الرئيسية</a>
+          <a href="#about">عن نبض</a>
+          <a href="#features">مميزات نبض</a>
+          <a href="#contact">تواصل معنا</a>
         </div>
 
         <div class="footer-col">
@@ -643,7 +630,6 @@
 
     </div>
   </footer>
-
 
 </body>
 </html>
