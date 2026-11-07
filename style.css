@@ -235,11 +235,14 @@ html { scroll-behavior: smooth; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 16px 32px;
-  background: rgba(255, 255, 255, 0.6); /* مؤقت لحد ما تبعتيلي الخلفية */
-  border-radius: 40px;
+  width: 1144px;
+  max-width: 94%;
+  height: 94px;
+   margin: 10px auto 40px;
+  padding: 0 48px;
+  border-radius: 9999px;
+  border: 1px solid #F1DDE2;
+  background: rgba(255, 255, 255, 0.6);
 }
 
 .feature {
