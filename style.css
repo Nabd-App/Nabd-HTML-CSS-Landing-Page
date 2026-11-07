@@ -423,8 +423,8 @@ html { scroll-behavior: smooth; }
   bottom: 10px;     /* أسفل الغصن يلمس أعلى الكرت الوردي */
   left: -50px;
   z-index: 5;
-  width: 110.014px;
-  height: 292.497px;
+  width: 132px;
+  height: 351px;
   transform: rotate(-6.942deg);
   transform-origin: bottom center;  /* يدور من أسفله، فما يبعد عن الكرت */
   object-fit: contain;
