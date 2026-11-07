@@ -1968,3 +1968,173 @@
 .form-input[type="email"]::placeholder {
   text-align: left;
 }
+
+
+/* ===== الصفحة الثامنة: الخطوة التالية ===== */
+.cta {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #FFF;
+}
+
+.cta-wave {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.cta-wave-back {
+  bottom: 0;
+  height: 203px;
+}
+
+.cta-wave-front {
+  bottom: 0;
+  height: 143px;
+}
+
+.cta-inner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 60px 120px 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.cta-content {
+  flex: 0 0 620px;
+  max-width: 100%;
+}
+
+.cta-label {
+  display: block;
+  color: #A34F68;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19.5px;
+  letter-spacing: 0.39px;
+}
+
+.cta-title {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+.cta-line1 {
+  color: #6D3047;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 75px;
+}
+
+.cta-line2 {
+  color: #E1738D;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 75px;
+}
+
+.cta-text {
+  max-width: 560px;
+  margin-top: 16px;
+  color: #6D3047;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30.4px;
+}
+
+.cta-buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.cta-btn-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 50px;
+  padding: 0 24px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #F5B99D 0%, #E1738D 100%);
+  color: #FFF;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.cta-btn-main img {
+  width: 18px;
+  height: 18px;
+}
+
+.cta-btn-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 0 24px;
+  border-radius: 12px;
+  border: 1px solid #F1DDE2;
+  background: rgba(255, 255, 255, 0.55);
+  color: #6D3047;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+/* اللوجو */
+.cta-brand {
+  position: relative;
+  flex-shrink: 0;
+  width: 360px;
+  height: 380px;
+  display: grid;
+  place-items: center;
+  transform: translateY(100px);
+}
+
+.cta-circle {
+  position: absolute;
+  width: 251px;
+  height: 267px;
+  border-radius: 50%;
+  border: 0.92px solid rgba(239, 206, 187, 0.3);
+   background: rgba(239, 206, 187, 0.15);
+   transform: translate(30px, 50px);
+}
+
+.cta-logo {
+   position: relative;
+  width: 360px;          /* كان 325px، كبّريه أكتر لو بدك */
+  height: 360px;
+  object-fit: contain;
+  transform: rotate(-20deg) translateY(30px);
+}
+
+.cta-slogan {
+    position: absolute;
+  bottom: -50px;
+  width: 126px;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: center;
+  white-space: nowrap;
+  
+}
